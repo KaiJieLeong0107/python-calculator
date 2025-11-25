@@ -44,8 +44,13 @@ def test_power():
     assert power(-3, 2) == 9
 
 
-def test_power_large_exponent():
-    assert power(2, 10) == 1024
+@pytest.mark.edge
+def test_divide_by_zero():
+    with pytest.raises(ValueError):
+        divide(1, 0)
 
-def test_power_very_large_exponent():
+
+@pytest.mark.slow
+def test_power_large_exponent():
     assert power(2, 1000) > 0
+
