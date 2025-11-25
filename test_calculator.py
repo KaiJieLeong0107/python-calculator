@@ -42,3 +42,9 @@ def test_power():
     assert power(5, 2) == 25
     assert power(2, 5) == 32
     assert power(-3, 2) == 9
+
+def test_divide_by_zero():
+    assert divide(1, 0) == "Error"
+
+def test_power_large_exponent():
+    assert power(2, 10) == 1024
