@@ -53,4 +53,3 @@ def test_divide_by_zero():
 @pytest.mark.slow
 def test_power_large_exponent():
     assert power(2, 1000) > 0
-
