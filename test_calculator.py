@@ -47,6 +47,5 @@ def test_power():
 def test_power_large_exponent():
     assert power(2, 10) == 1024
 
-
-def test_power_large_exponent():
+def test_power_very_large_exponent():
     assert power(2, 1000) > 0
