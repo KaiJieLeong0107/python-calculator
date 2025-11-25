@@ -32,6 +32,7 @@ def test_divide():
     assert divide(-10, 2) == -5
 
 
+@pytest.mark.edge
 def test_divide_by_zero():
     """Test that dividing by zero raises an error."""
     with pytest.raises(ValueError):
@@ -42,12 +43,6 @@ def test_power():
     assert power(5, 2) == 25
     assert power(2, 5) == 32
     assert power(-3, 2) == 9
-
-
-@pytest.mark.edge
-def test_divide_by_zero():
-    with pytest.raises(ValueError):
-        divide(1, 0)
 
 
 @pytest.mark.slow
