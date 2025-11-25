@@ -33,6 +33,6 @@ def test_divide_by_zero():
         divide(10, 0)
 
 def test_power():
-    assert power(5,2) == 25
-    assert power(2,5) == 32
-    assert power(-3,2) == 9
+    assert power(5, 2) == 25
+    assert power(2, 5) == 32
+    assert power(-3, 2) == 9
