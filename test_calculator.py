@@ -43,8 +43,11 @@ def test_power():
     assert power(2, 5) == 32
     assert power(-3, 2) == 9
 
+
 def test_divide_by_zero():
-    assert divide(1, 0) == "Error"
+    with pytest.raises(ValueError, match="Cannot divide by zero"):
+        divide(1, 0)
+
 
 def test_power_large_exponent():
     assert power(2, 10) == 1024
